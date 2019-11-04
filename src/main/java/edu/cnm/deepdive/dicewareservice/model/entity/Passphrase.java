@@ -49,7 +49,6 @@ public class Passphrase {
   @JoinColumn(name = "user_id", nullable = false, updatable = false)
   private User user;
 
-
   @NonNull
   @Column(name = "passkey", nullable = false, length = 20, unique = true)
   @Pattern(regexp = "^\\D.*")

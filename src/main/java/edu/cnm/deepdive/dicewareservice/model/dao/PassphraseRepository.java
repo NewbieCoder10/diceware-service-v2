@@ -11,7 +11,7 @@ public interface PassphraseRepository extends CrudRepository<Passphrase, Long> {
 
   Iterable<Passphrase> getAllByUserOrderByKeyAsc(User user);
 
-  Optional<Passphrase> getPassphrasebyUserAndId(User user, long id);
+  Optional<Passphrase> getPassphraseByUserAndId(User user, long id);
 
 
 }
